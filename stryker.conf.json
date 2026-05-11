@@ -1,0 +1,18 @@
+{
+  "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "_comment": "Configuração do StrykerJS para análise de mutação no projeto operacoes-mutante (Jest + JavaScript).",
+  "packageManager": "npm",
+  "reporters": ["html", "clear-text", "progress"],
+  "testRunner": "jest",
+  "testRunner_comment": "Executor de testes Jest detectado automaticamente no projeto.",
+  "coverageAnalysis": "perTest",
+  "mutate": ["src/**/*.js"],
+  "jest": {
+    "projectType": "custom",
+    "configFile": "package.json",
+    "enableFindRelatedTests": true
+  },
+  "htmlReporter": {
+    "fileName": "reports/mutation/mutation.html"
+  }
+}
